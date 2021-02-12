@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: avr-gcc.exe Aktive Datei kompilieren",
+			"command": "C:/Users/robby/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"-mmcu=atmega1280"
+			],
+			"options": {
+				"cwd": "C:/Users/robby/.platformio/packages/toolchain-atmelavr/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "Compiler: C:/Users/robby/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe"
+		}
+	]
+}
